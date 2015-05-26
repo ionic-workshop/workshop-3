@@ -1,0 +1,17 @@
+<ion-view view-title="Dashboard">
+  <ion-nav-buttons side="primary">
+      <button class="button button-clear icon ion-plus" ng-click="openModal()"></button>
+    </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <ion-item collection-repeat="city in cities | orderBy:'distance'" ui-sref= "tab.dash-details({cityId: city.id})">
+        <h2>{{city.city}}</h2>
+        <p>{{city.distance | number:2}} distance</p>
+            <ion-option-button class="button-positive"
+                       ng-click="lol(city)">
+      lol
+    </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

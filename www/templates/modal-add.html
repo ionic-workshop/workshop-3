@@ -1,0 +1,16 @@
+  <ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">My Modal title</h1>
+      <button class="button button-clear" ng-click="closeModal()"> Close</button>
+    </ion-header-bar>
+    <ion-content>
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Nom Ville" ng-model="data.nouveauNom">
+        </label>
+        <div class="padding">
+        <button class="button button-block button-positive activated" ng-click="ajouterVille()">Submit</button>
+      </div>
+      </div>
+    </ion-content>
+  </ion-modal-view>
